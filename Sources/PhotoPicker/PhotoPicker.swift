@@ -9,6 +9,12 @@ public struct PhotoPicker: UIViewControllerRepresentable {
     @Binding var isPresented: Bool
     let onImagePicked: ([UIImage]) -> Void
     
+    public init(configuration: PHPickerConfiguration, isPresented: Binding<Bool>, onImagePicked: @escaping ([UIImage]) -> Void) {
+        self.configuration = configuration
+        self._isPresented = isPresented
+        self.onImagePicked = onImagePicked
+    }
+    
     public func makeUIViewController(context: Context) -> PHPickerViewController {
         let controller = PHPickerViewController(configuration: configuration)
         controller.delegate = context.coordinator
