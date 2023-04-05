@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "combineextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jianghui1/CombineExtensions.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "79ac7b099ebba466f92d0358b809c8b75a388258"
+      }
+    }
+  ],
+  "version" : 2
+}
